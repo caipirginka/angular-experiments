@@ -1,4 +1,4 @@
-<ion-view style="left: 30%; width: 50%">
+<ion-view style="left: 30%; width: 70%;">
 	<ion-nav-buttons side="right">
 	  <button class="button" ng-click="gotoList()">
 	    Go to list
@@ -12,9 +12,8 @@
 	  </h1>	  
 	  <div class="buttons">
 		  <button class="button button-outline button-assertive"
-		  	style="font-size: 120%;" 
-		  	ui-sref="app.conto">
-		  	Riepilogo
+		  	style="font-size: 120%;">
+		  	Modifica
 		  </button>
 		</div>
 	</ion-header-bar>	
@@ -31,13 +30,13 @@
 		  	style="font-size: 120%;" 
 		  	ng-switch-when="false"
 		  	ui-sref="list.detail.sub()">
-		  	Apri
+		  	Modifica
 		  </button>
 		  <button class="button button-outline button-assertive"
 		  	style="font-size: 120%;" 
 		  	ng-switch-when="true"
 		  	ui-sref="list.detail({id: detail.id})">
-		  	Chiudi
+		  	Salva
 		  </button>
 		</div>
 	</ion-header-bar>	
@@ -53,10 +52,10 @@
 					<div class="col" data-ng-bind="detail.value"></div>
 				</div>
 				<button class="button" ui-sref="list.detail.sub()" ng-hide="'list.detail.sub' | isState">
-					Open subdetail
+					Modifica
 				</button>
 				<button class="button" ui-sref="list.detail({id: detail.id})" ng-show="'list.detail.sub' | isState">
-					Close subdetail
+					Salva
 				</button>
 			</div>
 		</div>
