@@ -32,20 +32,9 @@
   </head>
 
   <body ng-app="stm">
-<ion-nav-bar class="bar-positive nav-title-slide-ios7" NOstyle="width: 30%;">
-    <ion-nav-back-button>
-      Back
-    </ion-nav-back-button>
-    <div class="buttons right-buttons">
-      <button class="button">
-        Right Button
-      </button>
-    </div>
-</ion-nav-bar>
-
-    <ion-nav-view name="listContent">
-    </ion-nav-view>
-<!--     <ion-nav-view name="detailContent">
-    </ion-nav-view> -->
+		<ion-nav-bar class="bar-positive" animation="nav-title-slide-ios7" style="width: 30%;">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-arrow-left-c"></i></ion-nav-back-button>
+		</ion-nav-bar>
+    <ion-nav-view name="listContent"></ion-nav-view>
   </body>
 </html>

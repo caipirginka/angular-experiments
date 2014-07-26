@@ -11,7 +11,7 @@ theApp.controller('DetailCtrl', ['$scope','$state','detail', function($scope,$st
 	$scope.detail = detail;
 	
 	$scope.gotoList = function() {
-    $state.go('list.empty');				
+    $state.go('list.empty');
 	}
 }]);
 

@@ -13,9 +13,9 @@ theApp.factory('STM', ['$rootScope','$http','$state','$timeout','$window','$cach
 
 	self.getList = function() {
     return [
-            {'id': 0, 'value': 'aaa'},
-            {'id': 1, 'value': 'bbb'},
-            {'id': 2, 'value': 'ccc'}
+            {'id': 0, 'value': 'Albero'},
+            {'id': 1, 'value': 'Bottiglia'},
+            {'id': 2, 'value': 'Cannuccia'}
             ];
 	}
 
