@@ -59,6 +59,58 @@
 				</button>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col">
+				<div class="list">
+				  <label class="item item-input">
+				    <input type="text" placeholder="First Name">
+				  </label>
+				  <label class="item item-input">
+				    <input type="text" placeholder="Last Name">
+				  </label>
+				  <label class="item item-input">
+				    <textarea placeholder="Comments"></textarea>
+				  </label>
+					<ion-radio ng-model="choice" ng-value="'A'">Choose A</ion-radio>
+					<ion-radio ng-model="choice" ng-value="'B'">Choose B</ion-radio>
+					<ion-radio ng-model="choice" ng-value="'C'">Choose C</ion-radio>				  
+				</div>
+			</div>
+			<div class="col">
+				<div class="list">
+				  <label class="item item-input item-stacked-label">
+				    <span class="input-label">First Name</span>
+				    <input type="text" placeholder="John">
+				  </label>
+				  <label class="item item-input item-stacked-label">
+				    <span class="input-label">Last Name</span>
+				    <input type="text" placeholder="Suhr">
+				  </label>
+				  <label class="item item-input item-stacked-label">
+				    <span class="input-label">Email</span>
+				    <input type="text" placeholder="john@suhr.com">
+				  </label>
+				  <ion-checkbox ng-model="isChecked">Checkbox Label</ion-checkbox>
+					<div class="item item-checkbox">
+				     <label class="checkbox">
+				       <input type="checkbox">
+				     </label>
+				     Flux Capacitor
+				  </div>
+				  <ion-toggle ng-model="airplaneMode" toggle-class="toggle-calm">Airplane Mode</ion-toggle>
+					<div class="item item-toggle">
+				    HTML5
+				    <label class="toggle toggle-assertive">
+				      <input type="checkbox">
+				      <div class="track">
+				        <div class="handle"></div>
+				      </div>
+				    </label>
+					</div>
+  			</div>
+			</div>
+		</div>
 	</ion-content>
 </ion-view>
 <div ui-view="subContent"></div>
