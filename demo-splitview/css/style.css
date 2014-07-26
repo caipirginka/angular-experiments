@@ -1,0 +1,49 @@
+/* Empty. Add your own CSS if you like */
+
+.title-image {
+    margin-top: 8px;
+    height: 27px;
+}
+
+/* see: http://stackoverflow.com/questions/10014461/why-does-enabling-hardware-acceleration-in-css3-slow-down-performance */
+/* body {
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+} */
+
+.animate-show {
+  opacity:1;
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+  white-space: nowrap;
+  max-height: 1000px;
+}
+ 
+.animate-show.ng-hide-add,
+.animate-show.ng-hide-remove,
+.animate-show.ng-leave-add,
+.animate-show.ng-leave-remove {
+  display:block!important;
+}
+ 
+/* .animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+} */
+ 
+/* .animate-show.item-text-wrap.ng-leave-add.ng-leave-add-active,
+.animate-show.item-text-wrap.ng-leave-remove.ng-leave-remove-active {
+  -webkit-transition:all linear 5.5s;
+  transition:all linear 5.5s;
+} */
+ 
+.animate-show.ng-hide,
+.animate-show.ng-leave {
+  opacity:0;
+  max-height: 0;
+}
+
+.animate-show.item-text-wrap {
+	white-space: normal;
+}

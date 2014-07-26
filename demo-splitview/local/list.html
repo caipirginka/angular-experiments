@@ -1,0 +1,13 @@
+<ion-view title="List" style="width: 30%;">
+	<ion-content class="NOhas-header NOhas-subheader" NOstyle="width: 30%;">
+	  <ion-list>
+	    <ion-item class="NOitem-avatar" ng-repeat="detail in list" 
+	    	ui-sref="list.detail({id: detail.id})">
+	    	<h2 class="animate-show" style="font-size: 120%;">	    	
+	     		{{detail.value}}
+	     	</h2>
+	    </ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
+  <ion-nav-view name="detailContent"></ion-nav-view>

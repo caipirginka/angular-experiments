@@ -1,0 +1,20 @@
+<ion-view title="Detail" style="left: 30%; width: 50%;">
+<ion-nav-buttons side="right">
+  <button class="button" ng-click="gotoList()">
+    Go to list
+  </button>
+</ion-nav-buttons>
+<ion-content class="NOhas-header NOhas-subheader energized-bg" NOstyle="left: 30%; width: 50%;">
+	<h1 data-ng-bind="detail.value" ui-sref="list.detail.sub()"></h1>
+	<button ui-sref="list.detail.sub()">
+		Subdetail
+	</button>
+	<div class="row">
+		<div class="col" data-ng-bind="detail.value"></div>
+		<div class="col" data-ng-bind="detail.value"></div>
+		<div class="col" data-ng-bind="detail.value"></div>
+		<div class="col" data-ng-bind="detail.value"></div>
+	</div>
+</ion-content>
+<ion-nav-view name="subContent"></ion-nav-view>
+</ion-view>
